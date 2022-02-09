@@ -6,15 +6,12 @@ import com.macro.mall.common.api.CommonResult;
 import com.macro.mall.dto.UmsAdminLoginParam;
 import com.macro.mall.dto.UmsAdminParam;
 import com.macro.mall.dto.UpdateAdminPasswordParam;
-import com.macro.mall.model.UmsAdmin;
-import com.macro.mall.model.UmsRole;
 import com.macro.mall.service.UmsAdminService;
 import com.macro.mall.service.UmsRoleService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Controller;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 

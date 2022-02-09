@@ -51,17 +51,7 @@ public class CommentGenerator extends DefaultCommentGenerator {
     /**
      * 给model的字段添加注释
      */
-    private void addFieldJavaDoc(Field field, String remarks) {
-        //文档注释开始
-        field.addJavaDocLine("/**");
-        //获取数据库字段的备注信息
-        String[] remarkLines = remarks.split(System.getProperty("line.separator"));
-        for(String remarkLine:remarkLines){
-            field.addJavaDocLine(" * "+remarkLine);
-        }
-        addJavadocTag(field, false);
-        field.addJavaDocLine(" */");
-    }
+
 
     @Override
     public void addJavaFileComment(CompilationUnit compilationUnit) {
